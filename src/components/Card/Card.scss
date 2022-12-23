@@ -1,0 +1,196 @@
+.card {
+    width: 224px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+    // justify-content: space-between;
+
+    .image {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+            .secondImg {
+                z-index: 2;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+        }
+
+        .mainImg {
+            z-index: 1;
+        }
+
+        span {
+            position: absolute;
+            top: 7%;
+            left: 0%;
+            background-color: white;
+            color: teal;
+            padding: 3px 5px;
+            z-index: 3;
+            font-weight: 500;
+            font-size: 12px;
+
+            @media screen and (max-width: 480px) {
+                top: 10%;
+              }
+        }
+    }
+
+    .detail {
+        position: relative;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .prices {
+            display: flex;
+            gap: 20px;
+
+            .oldPrice {
+                font-size: 18px;
+                font-weight: 500;
+                position: absolute;
+                top: 2.5rem;
+                left: 0rem;
+
+                &:first-child {
+                    color: gray;
+                    text-decoration: line-through;
+                }
+            }
+
+            .itemPrice {
+                font-size: 18px;
+                font-weight: 500;
+                position: absolute;
+                top: 2.5rem;
+                left: 3.8rem;
+
+                &:first-child {
+                    color: gray;
+                    text-decoration: line-through;
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 201px !important;
+      }
+}
+
+.listCard{
+    width: 224px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+
+    .image {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+            .secondImg {
+                z-index: 2;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+        }
+
+        .mainImg {
+            z-index: 1;
+        }
+
+        span {
+            position: absolute;
+            top: 7%;
+            left: 0%;
+            background-color: white;
+            color: teal;
+            padding: 3px 5px;
+            z-index: 3;
+            font-weight: 500;
+            font-size: 12px;
+
+            @media screen and (max-width: 480px) {
+                top: 10%;
+              }
+        }
+    }
+
+    .detail {
+        position: relative;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .prices {
+            display: flex;
+            gap: 20px;
+
+            .oldPrice {
+                font-size: 18px;
+                font-weight: 500;
+                position: absolute;
+                top: 2.5rem;
+                left: 0rem;
+
+                &:first-child {
+                    color: gray;
+                    text-decoration: line-through;
+                }
+
+                @media screen and (max-width: 480px) {
+                    top: 3.5rem;
+                    left: 0rem;
+                  }
+            }
+
+            .itemPrice {
+                font-size: 18px;
+                font-weight: 500;
+                position: absolute;
+                top: 2.5rem;
+                left: 3.8rem;
+
+                &:first-child {
+                    color: gray;
+                    text-decoration: line-through;
+                }
+
+                @media screen and (max-width: 480px) {
+                    top: 3.5rem;
+                    left: 3.8rem;
+                  }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 150px !important;
+      }
+}

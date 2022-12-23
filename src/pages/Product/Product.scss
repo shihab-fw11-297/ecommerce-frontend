@@ -1,0 +1,237 @@
+.product {
+  padding: 20px 50px;
+  display: flex;
+  gap: 50px;
+
+  .left {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+
+    .images {
+      flex: 1;
+
+      img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+    }
+
+    .mainImg {
+      flex: 5;
+
+      img {
+        width: 100%;
+        max-height: 800px;
+        object-fit: cover;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h1 {
+      @media screen and (max-width: 480px) {
+        font-size: 23px;
+      }
+    }
+
+    .priceDetail {
+      display: flex;
+      flex-direction: column;
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+
+        .pricedata {
+          display: flex;
+          gap: 0.5rem;
+
+          .price {
+            font-size: 30px;
+            color: #2879fe;
+            font-weight: 500;
+
+            @media screen and (max-width: 480px) {
+              font-size: 20px;
+            }
+
+          }
+
+          .oldPrice {
+            font-size: 21px;
+            color: #c5c5c5;
+            font-weight: 500;
+            text-decoration: line-through;
+            margin-top: 7px;
+
+            @media screen and (max-width: 480px) {
+              font-size: 18px;
+              margin-top: 2px;
+            }
+          }
+        }
+
+        .discount {
+          font-size: 21px;
+          color: #444;
+          font-weight: 500;
+          margin-top: 5px;
+
+          @media screen and (max-width: 480px) {
+            font-size: 18px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      text-align: justify;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      // border: 1px solid black;
+
+      .quantity {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          border: none;
+        }
+      }
+
+      .size {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        h3 {
+          font-weight: 400;
+        }
+
+        select {
+          height: 40px;
+          margin-top: 10px;
+          margin-left: 10px;
+          padding: 0px 20px;
+        }
+      }
+    }
+
+    .add {
+      width: 15rem;
+      padding: 10px;
+      background-color: #2879fe;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      cursor: pointer;
+      border: none;
+      font-weight: 500;
+
+      @media screen and (max-width: 480px) {
+        width: 10rem;
+        padding: 6px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #2879fe;
+        font-size: 14px;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: gray;
+      font-size: 14px;
+      margin-top: 30px;
+
+      hr {
+        width: 200px;
+        border: 1px solid rgb(238, 237, 237);
+      }
+    }
+
+    .otherInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: gray;
+      font-size: 14px;
+      // margin-top: 30px;
+    }
+
+    hr {
+      border: 1px solid rgb(238, 237, 237);
+    }
+
+    @media screen and (max-width: 480px) {
+      gap: 2px;
+    }
+  }
+
+  .mobLeftSlider {
+    display: none;
+
+    .rec-arrow {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 31px;
+  }
+}

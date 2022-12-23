@@ -1,0 +1,94 @@
+.footer {
+    margin: 100px 200px 20px 200px;
+
+    .top {
+        display: flex;
+        gap: 50px;
+
+        .item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: justify;
+            font-size: 14px;
+
+            h1 {
+                font-size: 18px;
+                font-weight: 500;
+                color: #555;
+            }
+
+            span {
+                color: gray;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            
+        }
+
+        .firstlinks{
+
+            display: flex;
+            gap: 50px;
+            flex-direction: row;
+
+            @media screen and (max-width: 480px) {
+                display: flex;
+                gap: 20px;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            .logocontainer {
+                width: 30%;
+
+                .logo {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .copyright {
+                margin-left: 20px;
+                font-size: 12px;
+                color: gray;
+            }
+        }
+
+        .right {
+
+            img {
+                height: 50px;
+                @media screen and (max-width: 480px) {
+                    width: 90vw;
+                }
+            }
+        }
+        @media screen and (max-width: 480px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        margin: 100px 5% 20px 5%;
+    }
+}

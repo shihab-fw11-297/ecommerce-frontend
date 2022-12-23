@@ -1,0 +1,66 @@
+.featuredProducts {
+    margin: 100px 6%;
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // margin-bottom: 50px;
+      width: 80%;
+      margin: 0 auto 5% auto;
+  
+      h1 {
+        flex: 2;
+        text-transform: capitalize;
+
+        @media screen and (max-width: 480px) {
+         font-size: 1.8rem;
+        }
+
+      }
+  
+      p{
+        flex:3;
+        color:gray
+      }
+
+      @media screen and (max-width: 480px) {
+        flex-direction: column;
+      }
+    }
+  
+    .bottom{
+      width: 100%;
+      margin: 0;
+
+    .rec.rec-arrow {
+      border-radius: 50%;
+      background-color: #ffff;
+      color: black;
+      font-size: 15px;
+    }
+
+    .rec-swipable{
+      gap:10px !important
+    }
+    .rec-item-wrapper{
+      width: 231px !important;
+      @media screen and (max-width: 480px) {
+        width: 200px !important;
+      }
+    }
+    .rec.rec-arrow:disabled {
+      visibility: hidden;
+      color: black;
+    }
+
+    .rec-carousel-item:focus {
+      outline: none;
+      box-shadow: inset 0 0 1px 1px lightgrey;
+    }
+
+    .rec-pagination {
+      display: none;
+    }  
+    }
+  } 

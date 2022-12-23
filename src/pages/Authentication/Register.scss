@@ -1,0 +1,130 @@
+@mixin wrappers($width-value) {
+    width: $width-value;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin titles {
+    font-size: 24px;
+    font-weight: 350;
+    width: 100%;
+}
+
+@mixin wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin inputList {
+    flex: 1;
+    min-width: 40%;
+    margin: 20px 10px 0px 0px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@mixin btn{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .registerWrapper {
+        @include wrappers(40%);
+        text-align: center;
+
+        .flexColumn {
+            @include flex-column;
+        }
+
+        .title {
+            @include titles;
+        }
+
+        .forms {
+            @include wrap;
+        }
+
+        input {
+            @include inputList;
+        }
+
+        .aggrement {
+            font-size: 12px;
+            margin: 20px 0px;
+        }
+
+        .center{
+            @include center;
+        }
+
+        button {
+           @include btn;
+        }
+
+        .AlreadyRegister {
+            font-weight: 500;
+            color: red;
+        }
+    }
+
+    .loginWrapper {
+        @include wrappers(30%);
+        text-align: center;
+
+        .flexColumn {
+            @include flex-column;
+        }
+
+        .title {
+            @include titles;
+        }
+
+        .forms {
+            @include wrap;
+        }
+
+        input {
+            @include inputList;
+        }
+
+        .center{
+            @include center;
+        }
+
+        button {
+            @include btn;
+         }
+
+    }
+}
